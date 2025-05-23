@@ -1,0 +1,279 @@
+﻿
+@{
+    ViewBag.Title = "ChiTietSanPham";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="breadcrumb-content">
+            <h2>Chi tiết sản phẩm</h2>
+            <ul>
+                <li><a href="@Url.Action("Index","Home")">Trang chủ</a></li>
+                <li class="active">Chi tiết sản phẩm</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Uren's Breadcrumb Area End Here -->
+<!-- Begin Uren's Single Product Variable Area -->
+@model WebStoreHonda.Models.SanPham
+<style>
+    .sp-img_slider .single-slide img {
+        max-width: 100%; /* Đảm bảo hình không vượt quá chiều rộng container */
+        max-height: 500px; /* Đặt chiều cao tối đa để hình không quá lớn */
+        object-fit: contain; /* Giữ tỷ lệ hình ảnh và không bị kéo dãn */
+        width: auto; /* Điều chỉnh tự động theo chiều rộng của container */
+        height: auto; /* Điều chỉnh tự động theo chiều cao của container */
+    }
+</style>
+<div class="sp-area">
+    <div class="container-fluid">
+        <div class="sp-nav">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="sp-img_area">
+                        <div class="sp-img_slider slick-img-slider uren-slick-slider" data-slick-options='{
+                             "slidesToShow": 1,
+                             "arrows": false,
+                             "fade": true,
+                             "draggable": false,
+                             "swipe": true,
+                             "asNavFor": ".sp-img_slider-nav"
+                         }'>
+                            <div class="single-slide">
+                                <img id="mainImage" src="@Url.Content("~/assets/images/product/"+Model.MaSanPham + "/" + Model.HinhAnh)" alt="@Model.TenSanPham">
+                            </div>
+                        </div>
+                        <div class="sp-img_slider-nav slick-slider-nav uren-slick-slider slider-navigation_style-3" data-slick-options='{
+                             "slidesToShow": 3,
+                             "asNavFor": ".sp-img_slider",
+                             "focusOnSelect": true,
+                             "arrows": true,
+                             "spaceBetween": 30
+                         }'>
+                            @foreach (var HinhmauSac in ViewBag.HinhMauSac)
+                            {
+                                <div class="single-slide">
+                                    <img src="@Url.Content($"~/assets/images/product/{HinhmauSac.MaSanPham}/{HinhmauSac.MaMauSac}/{HinhmauSac.HinhMauSac}")" alt="@HinhmauSac.MauSac.TenMauSac"
+                                         class="thumbnail-image"
+                                         data-image="@Url.Content($"~/assets/images/product/{HinhmauSac.MaSanPham}/{HinhmauSac.MaMauSac}/{HinhmauSac.HinhMauSac}")">
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="sp-content">
+                        <div class="sp-heading">
+                            <h5 style="font-size: 24px;"><a href="#">@Model.TenSanPham</a></h5>
+                        </div>
+                        <div class="sp-essential_stuff">
+                            <ul>
+                                <li style="font-size: 20px;">Giá: <span>@Model.Gia.ToString("C0")</span></li>
+                            </ul>
+                        </div>
+                        <div class="sp-description">
+                            @Html.Raw(Model.MoTa)
+                            <style>
+                                .sp-description {
+                                    font-weight: bold;
+                                    padding: 15px;
+                                    border: 2px solid #007ACC;
+                                    border-radius: 8px;
+                                    background-color: #f9f9f9;
+                                    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+                                }
+                            </style>
+                        </div>
+                        <form action="@Url.Action("AddToCart", "Home")" method="post">
+                            <input type="hidden" name="productId" value="@Model.MaSanPham" />
+
+                            <div class="color-list_area">
+                                <div class="color-list_heading">
+                                    <h4>Lựa chọn màu</h4>
+                                </div>
+                                <span class="sub-title">Màu</span>
+                                @foreach (var mauSac in ViewBag.MauSac)
+                                {
+                                    <label style="margin-right: 10px;">
+                                        <input type="radio" name="selectedColor" value="@mauSac.MaMauSac" required
+                                               data-hinh-anh="@Url.Content($"~/assets/images/product/{Model.MaSanPham}/{mauSac.MaMauSac}/{mauSac.HinhMauSac}")" />
+                                        <span style="background-color:@mauSac.TenMauSac; display: inline-block; border-radius: 50%;"></span>
+                                        @mauSac.TenMauSac
+                                    </label>
+                                }
+                            </div>
+
+                            <div class="quantity">
+                                <label>Số lượng</label>
+                                <div class="cart-plus-minus">
+                                    <input class="cart-plus-minus-box" name="quantity" value="1" type="number" min="1">
+                                    <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
+                                    <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
+                                </div>
+                            </div>
+                            @if (Session["UserEmail"] != null)
+                            {
+                                <div class="qty-btn_area">
+                                    <ul>
+                                        <li><a class="qty-cart_btn"><button type="submit">Thêm vào giỏ hàng</button></a></li>
+                                    </ul>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="qty-btn_area">
+                                    <ul>
+                                        <li><a href="@Url.Action("DangNhap","Home")" class="qty-cart_btn">Thêm vào giỏ hàng</a></li>
+                                    </ul>
+                                </div>
+                            }
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Lắng nghe sự kiện click trên hình ảnh nhỏ
+        var smallImages = document.querySelectorAll('.sp-img_slider-nav .single-slide img');
+        var mainImage = document.getElementById('mainImage');
+
+        smallImages.forEach(function (img) {
+            img.addEventListener('click', function () {
+                var newImageSrc = this.getAttribute('data-image'); // Lấy đường dẫn từ thuộc tính data-image
+                if (mainImage) {
+                    mainImage.src = newImageSrc; // Cập nhật hình ảnh lớn
+                }
+            });
+        });
+    });
+    $(document).ready(function () {
+        $('input[name="selectedColor"]').on('change', function () {
+            var newImage = $(this).data('hinh-anh'); // Lấy đường dẫn hình ảnh từ thuộc tính data-hinh-anh
+            var mainImage = document.getElementById('mainImage'); // Lấy hình ảnh chính
+            if (mainImage) {
+                mainImage.src = newImage; // Cập nhật hình ảnh lớn
+            }
+        });
+    });
+</script>
+
+
+
+
+
+<div class="uren-product_area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title_area">
+                    <span></span>
+                    <h3>Sản phẩm cùng giá</h3>
+                </div>
+                <div class="product-slider uren-slick-slider slider-navigation_style-1 img-hover-effect_area" data-slick-options='{
+                    "slidesToShow": 6,
+                    "arrows" : true
+                }' data-slick-responsive='[
+                    {"breakpoint":1501, "settings": {"slidesToShow": 4}},
+                    {"breakpoint":1200, "settings": {"slidesToShow": 3}},
+                    {"breakpoint":992, "settings": {"slidesToShow": 2}},
+                    {"breakpoint":767, "settings": {"slidesToShow": 1}},
+                    {"breakpoint":480, "settings": {"slidesToShow": 1}}
+                ]'>
+                    @foreach (var sp in ViewBag.SanPhamCungGia)
+                    {
+                        <div class="product-slide_item">
+                            <div class="inner-slide">
+                                <div class="single-product">
+                                    <div class="product-img">
+                                        <a href="@Url.Action("ChiTietSanPham", "Home", new { id = sp.MaSanPham })">
+                                            <img class="primary-img" style="height:200px" src="@Url.Content($"~/assets/images/product/{sp.MaSanPham}/{sp.HinhAnh}")" alt="@sp.TenSanPham">
+                                            <img class="secondary-img" style="height:200px" src="@Url.Content($"~/assets/images/product/{sp.MaSanPham}/{sp.HinhAnh}")" alt="@sp.TenSanPham">
+                                        </a>
+                                        <div class="sticker">
+                                            <span class="sticker">New</span>
+                                        </div>
+                                        <div class="add-actions">
+                                            <ul>
+
+                                                <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter">
+                                                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View">
+                                                        <i class="ion-android-open"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-desc_info">
+                                            <h6><a class="product-name" href="@Url.Action("ChiTietSanPham", "Home", new { id = sp.MaSanPham })">@sp.TenSanPham</a></h6>
+                                            <div class="price-box">
+                                                <span class="new-price">@sp.Gia.ToString("C")</span> <!-- Hiển thị giá -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="comments-section" style="padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+        <h4 style="color: #007bff; border-bottom: 2px solid #007bff; padding-bottom: 10px;">Bình luận</h4>
+        @if (ViewBag.BinhLuans != null && ViewBag.BinhLuans.Count > 0)
+        {
+            <div class="comments-list">
+                @foreach (var binhLuan in ViewBag.BinhLuans)
+                {
+                    <div class="comment">
+                        <p style="margin: 0; font-weight: bold;">
+                            @binhLuan.Email
+                            <span style="font-size: 0.9em; color: #888;"> (@binhLuan.NgayBinhLuan.ToString("dd/MM/yyyy HH:mm"))</span>:
+                        </p>
+                       
+                        <p style="margin: 5px 0 0 0;">@binhLuan.NoiDung</p>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <p>Chưa có bình luận nào cho sản phẩm này.</p>
+        }
+
+        @if (Session["UserEmail"] != null)
+        {
+            <h5 style="margin-top: 20px;">Thêm bình luận</h5>
+            <form action="@Url.Action("BinhLuan", "Home")" method="post">
+                <input type="hidden" name="MaSP" value="@Model.MaSanPham" />
+                <div class="form-group">
+                    <textarea class="form-control" name="NoiDung" rows="4" placeholder="Viết bình luận của bạn..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Đánh giá:</label>
+                    <select name="DanhGia" required>
+                        <option value="">Chọn đánh giá</option>
+                        <option value="1">Kém</option>
+                        <option value="2">Trung bình</option>
+                        <option value="3">Hài lòng</option>
+                        <option value="4">Rất tốt</option>
+                        <option value="5">Tuyệt vời</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+            </form>
+        }
+        else
+        {
+            <p>Bạn cần <a href="@Url.Action("DangNhap", "Home")" style="color: #007bff; text-decoration: underline;">đăng nhập</a> để bình luận.</p>
+        }
+    </div>

@@ -1,0 +1,174 @@
+﻿
+@{
+    ViewBag.Title = "GioHang";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+    WebStoreHonda.Models.StoreHondaEntities4 db = new WebStoreHonda.Models.StoreHondaEntities4();
+}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+@model List<WebStoreHonda.Models.ChiTietGioHang>
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="breadcrumb-content">
+            <h2>Giỏ hàng</h2>
+            <ul>
+                <li><a href="@Url.Action("Index","Home")">Trang chủ</a></li>
+                <li class="active">Giỏ hàng</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Uren's Breadcrumb Area End Here -->
+<div class="uren-cart-area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <form action="javascript:void(0)">
+                    <div class="table-content table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="uren-product-remove">Xóa</th>
+                                    <th class="uren-product-thumbnail">Hình ảnh</th>
+                                    <th class="cart-product-name">Sản phẩm</th>
+                                    <th class="uren-product-price">Giá</th>
+                                    <th class="uren-product-quantity">Số lượng</th>
+                                    <th class="uren-product-quantity">Màu</th>
+                                    <th class="uren-product-subtotal">Tổng tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model != null && Model.Any())
+                                {
+                                    foreach (var item in Model)
+                                    {
+                                        var sanPham = db.SanPhams.SingleOrDefault(sp => sp.MaSanPham == item.MaSanPham);
+                                        var mauSac = db.MauSacs.SingleOrDefault(ms => ms.MaMauSac == item.MaMauSac);
+
+                                        if (sanPham != null && mauSac != null)
+                                        {
+                                            <tr>
+                                                <td class="uren-product-remove">
+                                                    <a href="@Url.Action("XoaGioHang",new {id = sanPham.MaSanPham,mamau = mauSac.MaMauSac})">
+                                                        <i class="fa fa-trash" title="Remove"></i>
+                                                    </a>
+                                                </td>
+                                                <td class="uren-product-thumbnail">
+                                                    <a href="javascript:void(0)">
+                                                        <img style="width:60px" src="@Url.Content($"~/assets/images/product/{sanPham.MaSanPham}/{sanPham.HinhAnh}")" alt="@sanPham.TenSanPham">
+                                                    </a>
+                                                </td>
+                                                <td class="uren-product-name">
+                                                    <a href="javascript:void(0)">@sanPham.TenSanPham</a>
+                                                </td>
+                                                <td class="uren-product-price"><span class="amount">@String.Format("{0:C}", sanPham.Gia)</span></td>
+                                                <td class="quantity">
+                                                    <label>Quantity</label>
+                                                    <div class="cart-plus-minus">
+                                                        <input class="cart-plus-minus-box" value="@item.SoLuong" type="text" data-id="@sanPham.MaSanPham" data-color="@mauSac.MaMauSac">
+                                                        <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
+                                                        <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
+                                                    </div>
+                                                </td>
+
+                                                <td class="coler"><span>@mauSac.TenMauSac</span></td>
+                                                <td class="product-subtotal">
+                                                    <span class="amount">@String.Format("{0:N0}", sanPham.Gia * item.SoLuong)</span>
+                                                </td>
+                                            </tr>
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="7">Giỏ hàng của bạn hiện tại đang trống.</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 ml-auto">
+                            <div class="cart-page-total">
+                                <h2>Thành tiền</h2>
+                                <ul>
+                                    <li>Tổng tiền <span>@String.Format("{0:N0}", Model.Sum(x => db.SanPhams.SingleOrDefault(sp => sp.MaSanPham == x.MaSanPham).Gia * x.SoLuong))</span></li>
+
+
+                                </ul>
+                                <a href="@Url.Action("DatHang","Home")">Tiến hành đặt hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    @if (TempData["ErrorMessage"] != null)
+{
+    <text>
+        alert('@TempData["ErrorMessage"]');
+    </text>
+}
+    $(document).ready(function() {
+        // Khi thay đổi số lượng từ input
+        $('.cart-plus-minus-box').on('change', function() {
+            updateCart($(this));
+        });
+
+        // Khi nhấn nút giảm số lượng
+        $('.dec').on('click', function() {
+            var input = $(this).siblings('.cart-plus-minus-box');
+            var currentValue = parseInt(input.val());
+            if (currentValue >= 1) { // Đảm bảo số lượng không giảm dưới 1
+
+                updateCart(input);
+            }
+        });
+
+        // Khi nhấn nút tăng số lượng
+        $('.inc').on('click', function() {
+            var input = $(this).siblings('.cart-plus-minus-box');
+            var currentValue = parseInt(input.val());
+
+            updateCart(input);
+        });
+
+        function updateCart(input) {
+            var quantity = input.val(); // Lấy số lượng mới
+            var productId = input.data('id'); // Lấy id sản phẩm
+            var selectedColor = input.data('color'); // Lấy màu sắc
+
+            // Gửi Ajax đến action UpdateQuantity
+            $.ajax({
+                url: '@Url.Action("CapNhatGioHang", "Home")',
+                type: 'POST',
+                data: {
+                    productId: productId,
+                    quantity: quantity,
+                    selectedColor: selectedColor
+                },
+                success: function(response) {
+                    if (response.success) {
+                        alert(response.message)
+                        location.reload(); // Tải lại trang để cập nhật giao diện
+                    } else {
+                        alert('Có lỗi xảy ra, vui lòng thử lại!');
+                    }
+                },
+                error: function() {
+                    alert('Có lỗi xảy ra, vui lòng thử lại!');
+                }
+            });
+        }
+    });
+</script>
+

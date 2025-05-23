@@ -1,0 +1,713 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\LTW\\WebStoreHonda\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|c:\\ltw\\webstorehonda\\webstorehonda\\views\\admin\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\admin\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\admin\\quanlydonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\admin\\quanlydonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\home\\giohang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\home\\giohang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\home\\chitietdonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\home\\chitietdonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\home\\chitietsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\home\\chitietsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\home\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\home\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\home\\hoso.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\home\\hoso.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|c:\\ltw\\webstorehonda\\webstorehonda\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\admin\\themsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\admin\\themsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\admin\\chinhsuamausac.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\admin\\chinhsuamausac.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\shared\\_danhmucpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\shared\\_danhmucpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\shared\\_layouthome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\shared\\_layouthome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\shared\\_partialfooter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\shared\\_partialfooter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\admin\\loi404.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\admin\\loi404.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\admin\\quanlysanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\admin\\quanlysanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\admin\\quanlykhachhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\admin\\quanlykhachhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\admin\\themdanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\admin\\themdanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\home\\cuahang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\home\\cuahang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\home\\dathangthanhcong.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\home\\dathangthanhcong.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\admin\\themmausac.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\admin\\themmausac.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\admin\\suasanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\admin\\suasanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\shared\\_partialheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\shared\\_partialheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\admin\\thongkedonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\admin\\thongkedonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\models\\mausacviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\models\\mausacviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\admin\\quanlydanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\admin\\quanlydanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\admin\\chinhsuadanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\admin\\chinhsuadanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\admin\\quanlymausac.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\admin\\quanlymausac.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\views\\home\\dangky.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\views\\home\\dangky.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|C:\\LTW\\WebStoreHonda\\webstorehonda\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F2F8CD98-13C5-4688-BDB5-4AE9985597EB}|WebStoreHonda\\WebStoreHonda.csproj|solutionrelative:webstorehonda\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 9,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebStoreHonda\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAwwM4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T13:05:37.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DangNhap.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\DangNhap.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Admin\\DangNhap.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\DangNhap.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Admin\\DangNhap.cshtml",
+              "ViewState": "AQIAACwAAAAAAAAAAAAkwEUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T00:10:05.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "MauSacViewModel.cs",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Models\\MauSacViewModel.cs",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Models\\MauSacViewModel.cs",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Models\\MauSacViewModel.cs",
+              "RelativeToolTip": "WebStoreHonda\\Models\\MauSacViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T07:26:51.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ChinhSuaDanhMuc.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\ChinhSuaDanhMuc.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Admin\\ChinhSuaDanhMuc.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\ChinhSuaDanhMuc.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Admin\\ChinhSuaDanhMuc.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAmwCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T09:29:23.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ThongKeDonHang.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\ThongKeDonHang.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Admin\\ThongKeDonHang.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\ThongKeDonHang.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Admin\\ThongKeDonHang.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T06:26:37.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAkwIsAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T02:35:31.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T11:31:22.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "FilterConfig.cs",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\App_Start\\FilterConfig.cs",
+              "RelativeDocumentMoniker": "WebStoreHonda\\App_Start\\FilterConfig.cs",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\App_Start\\FilterConfig.cs",
+              "RelativeToolTip": "WebStoreHonda\\App_Start\\FilterConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T08:37:17.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "WebStoreHonda\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "WebStoreHonda\\App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T08:37:16.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuanLyDonHang.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\QuanLyDonHang.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Admin\\QuanLyDonHang.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\QuanLyDonHang.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Admin\\QuanLyDonHang.cshtml",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAIwDcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T08:01:11.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAABwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T00:32:25.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_PartialHeader.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Shared\\_PartialHeader.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Shared\\_PartialHeader.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Shared\\_PartialHeader.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Shared\\_PartialHeader.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAEEAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-04T12:12:52.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CuaHang.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\CuaHang.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Home\\CuaHang.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\CuaHang.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Home\\CuaHang.cshtml",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAQwGEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-04T14:23:16.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Site.css",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Content\\Site.css",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Content\\Site.css",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Content\\Site.css",
+              "RelativeToolTip": "WebStoreHonda\\Content\\Site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-10T05:28:07.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "WebStoreHonda\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T05:27:57.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "QuanLySanPham.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\QuanLySanPham.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Admin\\QuanLySanPham.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\QuanLySanPham.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Admin\\QuanLySanPham.cshtml",
+              "ViewState": "AQIAACsAAAAAAAAAAEBVwGAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T03:21:31.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_PartialFooter.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Shared\\_PartialFooter.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Shared\\_PartialFooter.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Shared\\_PartialFooter.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Shared\\_PartialFooter.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAFYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T00:32:41.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "QuanLyKhachHang.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\QuanLyKhachHang.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Admin\\QuanLyKhachHang.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\QuanLyKhachHang.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Admin\\QuanLyKhachHang.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T03:21:42.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Loi404.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\Loi404.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Admin\\Loi404.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\Loi404.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Admin\\Loi404.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T03:18:49.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ChinhSuaMauSac.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\ChinhSuaMauSac.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Admin\\ChinhSuaMauSac.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\ChinhSuaMauSac.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Admin\\ChinhSuaMauSac.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T02:07:22.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T00:44:50.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DatHangThanhCong.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\DatHangThanhCong.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Home\\DatHangThanhCong.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\DatHangThanhCong.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Home\\DatHangThanhCong.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T00:44:12.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChiTietSanPham.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\ChiTietSanPham.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Home\\ChiTietSanPham.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\ChiTietSanPham.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Home\\ChiTietSanPham.cshtml",
+              "ViewState": "AQIAAMcAAAAAAAAAAAAAABcBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T00:44:03.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChiTietDonHang.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\ChiTietDonHang.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Home\\ChiTietDonHang.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\ChiTietDonHang.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Home\\ChiTietDonHang.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAIwC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T00:43:40.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SuaSanPham.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\SuaSanPham.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Admin\\SuaSanPham.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\SuaSanPham.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Admin\\SuaSanPham.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T00:10:02.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ThemMauSac.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\ThemMauSac.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Admin\\ThemMauSac.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\ThemMauSac.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Admin\\ThemMauSac.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T00:09:58.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ThemDanhMuc.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\ThemDanhMuc.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Admin\\ThemDanhMuc.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\ThemDanhMuc.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Admin\\ThemDanhMuc.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAmwBsAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T00:09:57.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Web.config",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Web.config",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Web.config",
+              "RelativeToolTip": "WebStoreHonda\\Web.config",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAD8AAADuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-10-06T10:42:53.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HoSo.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\HoSo.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Home\\HoSo.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\HoSo.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Home\\HoSo.cshtml",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T07:29:03.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GioHang.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\GioHang.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Home\\GioHang.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\GioHang.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Home\\GioHang.cshtml",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAIwKgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T06:52:57.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\Error.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Home\\Error.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\Error.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Home\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T06:21:32.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAACsAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-04T13:55:49.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_DanhMucPartial.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Shared\\_DanhMucPartial.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Shared\\_DanhMucPartial.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Shared\\_DanhMucPartial.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Shared\\_DanhMucPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-04T13:08:44.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAADoAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-04T14:14:52.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DangKy.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\DangKy.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Home\\DangKy.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\DangKy.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Home\\DangKy.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAFYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-04T14:20:16.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DangNhap.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\DangNhap.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Home\\DangNhap.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Home\\DangNhap.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Home\\DangNhap.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABIAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-04T14:22:10.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_LayoutHome.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Shared\\_LayoutHome.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Shared\\_LayoutHome.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Shared\\_LayoutHome.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Shared\\_LayoutHome.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAACUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-04T12:06:38.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "QuanLyDanhMuc.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\QuanLyDanhMuc.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Admin\\QuanLyDanhMuc.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\QuanLyDanhMuc.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Admin\\QuanLyDanhMuc.cshtml",
+              "ViewState": "AQIAACAAAAAAAAAAAEBlwEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T07:59:49.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "WebStoreHonda\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAAA0AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T11:06:05.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ThemSanPham.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\ThemSanPham.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Admin\\ThemSanPham.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\ThemSanPham.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Admin\\ThemSanPham.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T12:30:52.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "QuanLyMauSac.cshtml",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\QuanLyMauSac.cshtml",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Views\\Admin\\QuanLyMauSac.cshtml",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Views\\Admin\\QuanLyMauSac.cshtml",
+              "RelativeToolTip": "WebStoreHonda\\Views\\Admin\\QuanLyMauSac.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T12:20:53.07Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 3,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Models\\Model1.edmx",
+              "RelativeDocumentMoniker": "WebStoreHonda\\Models\\Model1.edmx",
+              "ToolTip": "C:\\LTW\\WebStoreHonda\\WebStoreHonda\\Models\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "WebStoreHonda\\Models\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-11-15T07:38:09.29Z",
+              "EditorCaption": " [Diagram1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

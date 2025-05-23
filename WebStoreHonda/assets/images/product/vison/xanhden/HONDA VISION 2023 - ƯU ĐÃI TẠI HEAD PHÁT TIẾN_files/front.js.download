@@ -1,0 +1,261 @@
+ 
+jQuery(document).ready(function ($) {
+    $(document).on('keyup','.phone-validate', function (e) { 
+        var $this = $(this);
+        let inputValue = $.trim($this.val());
+        inputValue = inputValue.replace(/\D/g, '');
+        if (inputValue.startsWith('0')) {
+            // Giữ lại chỉ 10 ký tự đầu tiên
+            $this.val(inputValue.slice(0, 10)); 
+        } else {
+            // Nếu không bắt đầu bằng số 0, xóa giá trị
+            $this.val(''); 
+        }
+    });
+    $('.mona-show-popup-list').on('click', function(e) {
+        var $this = $(this);
+        var $url = $this.attr('href');
+        if ($this[0].nodeType != 'a') {
+            $url = $this.find('a').attr('href');
+        }
+        if ($url == '' || typeof $url == 'undefined') {
+            return;
+        }
+        e.preventDefault();
+        $.ajax({
+            url: mona_ajax_url.ajaxURL,
+            type: 'post',
+            data: {
+                action: 'mona_ajax_get_voucher_data',
+                data: $url,
+            },
+            error: function(request) {
+                $this.removeClass('loading');
+                window.location.href = $url;
+
+            },
+            beforeSend: function() {
+                $this.addClass('loading');
+
+            },
+            success: function(response) {
+                $this.removeClass('loading');
+                if ($('#mona-ma-code').length) {
+                    $('#mona-ma-code').attr('value', response.data.code);
+                }
+                if ($('.mona-ap-dung').length) {
+                    $('.mona-ap-dung').attr('value', response.data.ap_dung);
+                }
+                if ($('.mona-loai-xe').length) {
+                    $('.mona-loai-xe').attr('value', response.data.loaixe);
+                }
+                if ($('#mona-sotien').length) {
+                    $('#mona-sotien').attr('value', response.data.tien);
+                }
+                if ($('#mona-het-han').length) {
+                    $('#mona-het-han').attr('value', response.data.het_han);
+                }
+                if (response.data.send) {
+                    $('.mona-sort-code2').show();
+                    $('.mona-sort-code1').hide();
+                } else {
+                    $('.mona-sort-code1').show();
+                    $('.mona-sort-code2').hide();
+                }
+
+                $.magnificPopup.open({
+                    type: 'inline',
+                    items: {
+                        src: '#popup-voucher-page',
+                    },
+                    callbacks: {
+                        open: function() {
+                            var $popC = this.content;
+
+                            if ($('[name="mona_utm_source"]').length) {
+                                $popC.find('[name="mona_utm_source"]').attr('value', response.data.utm_source);
+                            }
+                            if ($('[name="mona_utm_medium"]').length) {
+                                $popC.find('[name="mona_utm_medium"]').attr('value', response.data.utm_medium);
+                            }
+                            if ($('[name="mona_utm_campaign"]').length) {
+                                $popC.find('[name="mona_utm_campaign"]').attr('value', response.data.utm_campaign);
+                            }
+                            if ($('.mona-popup-img').length) {
+                                $popC.find('.mona-popup-img').html('<img src="' + response.data.img + '"/>');
+                            }
+                            $('#popup-voucher-page').attr('data-id', response.data.id);
+                        },
+                        close: function() {
+                            var $popC = this.content;
+                            $('#popup-voucher-page').attr('data-id', '');
+                        }
+                    }
+                });
+
+            }
+        });
+
+    });
+    var wpcf7Elm = document.querySelector('.wpcf7');
+
+    document.addEventListener('wpcf7mailsent', function(event) {
+        var $id = $('#popup-voucher-page').attr('data-id');
+        if (typeof $id == 'undefined' || $id == '') {
+            return;
+        }
+        if (event.detail.contactFormId == '99') {
+
+            $.ajax({
+                url: mona_ajax_url.ajaxURL,
+                type: 'post',
+                data: {
+                    action: 'mona_ajax_send_voucher',
+                    id: $id,
+                    data: event.detail.inputs
+                },
+                error: function(request) {
+                    $(event.target).find('.wpcf7-response-output').removeClass('mona-hiden');
+                    $(event.target).find('.ajax-loader').removeClass('mona-active');
+                },
+                beforeSend: function() {
+                    $(event.target).find('.wpcf7-response-output').addClass('mona-hiden');
+                    $(event.target).find('.ajax-loader').addClass('mona-active');
+                },
+                success: function(result) {
+                    window.location.href = result;
+                }
+            });
+        } else {
+            window.location.href = mona_ajax_url.form_Success;
+        }
+    }, true);
+
+
+    //BEGIN detail page js
+    if ($('.mona-tu-url').length) {
+        $('.mona-tu-url').val(window.location.href);
+    }
+
+    if ($('#image360').length) {
+        var initReelImages = $('#image360').attr('data-images');
+        if (initReelImages.split('|')[1] != '') {
+            $('#image360').reel({ images: initReelImages });
+            $('.product-360-wrap .indicator').on('click', '.step-click', function(e) {
+                e.preventDefault();
+                $(this).hasClass('left-step') ? $('#image360').trigger("stepLeft") : $('#image360').trigger("stepRight");
+            });
+        }
+    }
+    $('.pd-color-picker').on('click', '.cl-picker', function(e) {
+        var reelImages = $(this).attr('data-imgs');
+        if (reelImages.split('|')[1] != '') {
+            var reelImageString = reelImages.split('|')[1].split('..')[0];
+            var reelImage = reelImages.split('|')[0].replace(/####/g, reelImageString);
+            $('#image360').reel({ images: reelImages });
+        } else {
+            $('#image360').attr('src', reelImages.split('|')[0]);
+        }
+
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+
+    $('.bike-gallery-ul').lightGallery({
+        mode: 'lg-fade',
+        cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+        selector: '.glitem',
+        thumbnail: true,
+        exThumbImage: 'data-thumb',
+    });
+    //END detail page js
+    $('.mona-datcoc-btn').on('click', function(e) {
+        e.preventDefault();
+        $pdName = $('.pd-name').text();
+        $url = $(this).attr('href');
+        $url = $url.replace(mona_ajax_url.siteURL + '/order/?xe=', "");
+        $url = $url.replace(mona_ajax_url.siteURL + '/order?xe=', "");
+        $.magnificPopup.open({
+            type: 'inline',
+            items: {
+                src: $('#popup-dat-coc'),
+            },
+            callbacks: {
+                open: function() {
+                    var $popC = this.content;
+                    $popC.find('#loai-xe').text($pdName);
+                    $popC.find('#xe_url').val($url);
+                    $popC.find('#xe_name').val($pdName);
+                    $('#popup-dat-coc form').on('submit', function(e) {
+                        e.preventDefault();
+                        var $form = $(this);
+                        var $data = $form.serialize();
+                        var money = parseInt($popC.find('[name="so-tien"]').val());
+                        console.log(money);
+                        if (money <= 0 || isNaN(money)) {
+                            $popC.find('#respon-data').text('Bạn vui lòng chọn số tiền muốn đặt cọc').show();
+
+                        }
+                        if (!$form.hasClass('loading') && money > 0 && !isNaN(money)) {
+                            $.ajax({
+                                url: mona_ajax_url.ajaxURL,
+                                type: 'post',
+                                data: {
+                                    action: 'mona_ajax_add_order',
+                                    data: $data,
+                                },
+                                error: function(request) {
+                                    $form.removeClass('loading');
+                                    $popC.find('#respon-data').text('Oops! Lỗi Không gửi được dữ liệu').show();
+
+                                },
+                                beforeSend: function() {
+                                    $form.addClass('loading');
+                                    $popC.find('#respon-data').hide();
+                                },
+                                success: function(response) {
+
+                                    if (response.success) {
+
+                                        window.location.href = response.data['redirect'];
+                                    } else {
+                                        $form.removeClass('loading');
+                                        $popC.find('#respon-data').text(response.data).show();
+                                    }
+
+
+                                }
+                            });
+                        }
+                    });
+                },
+                close: function() {
+                    var $popC = this.content;
+                }
+            }
+        });
+    });
+
+    // submit form
+    $('.wpcf7-form').submit(function() {
+        $('.wpcf7-submit').attr('disabled', true);
+    });
+
+    // document.addEventListener('wpcf7invalid', function(event) {
+    //     $('.wpcf7-submit').attr('disabled', false);
+    // }, false);
+
+    // document.addEventListener('wpcf7invalid', function(event) {
+    //     $('.wpcf7-submit').attr('disabled', false);
+    // }, false);
+
+    // document.addEventListener('wpcf7invalid', function(event) {
+    //     $('.wpcf7-submit').attr('disabled', false);
+    // }, false);
+
+    document.addEventListener('wpcf7submit', function(event) {
+        $('.wpcf7-submit').attr('disabled', false);
+    }, false);
+
+
+
+});

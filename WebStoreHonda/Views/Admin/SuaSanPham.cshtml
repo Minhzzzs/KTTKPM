@@ -1,0 +1,85 @@
+﻿@model WebStoreHonda.Models.SanPham
+
+@{
+    ViewBag.Title = "Sửa Sản Phẩm";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Sửa Sản Phẩm</h2>
+
+@using (Html.BeginForm("SuaSanPham", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.HiddenFor(model => model.MaSanPham)
+
+    <div class="mb-3">
+        <label class="form-label">Tên Sản Phẩm</label>
+        @Html.TextBoxFor(model => model.TenSanPham, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.TenSanPham, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Danh Mục</label>
+        @Html.DropDownListFor(model => model.MaDanhMuc, (IEnumerable<SelectListItem>)ViewBag.DanhMucList, "-- Chọn danh mục --", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.MaDanhMuc, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Mô Tả</label>
+        @Html.TextBoxFor(model => model.MoTa, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.MoTa, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Giá</label>
+        @Html.TextBoxFor(model => model.Gia, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Gia, "", new { @class = "text-danger" })
+    </div>
+
+    
+}
+
+
+<div class="mb-3">
+    <label class="form-label">Chọn Màu Sắc</label>
+    <select id="mauSacSelect" name="MaMauSac" class="form-control" multiple>
+        @foreach (var mauSac in ViewBag.MauSacList)
+        {
+            <option value="@mauSac.MaMauSac">@mauSac.TenMauSac</option>
+        }
+    </select>
+    @Html.ValidationMessage("MaMauSac", "", new { @class = "text-danger" })
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Hình Ảnh Đại Diện</label>
+    <input type="file" name="HinhDaiDien" class="form-control" />
+    @Html.ValidationMessage("HinhDaiDien", "", new { @class = "text-danger" })
+</div>
+
+<div id="mauSacImages" class="mb-3">
+    <label class="form-label">Hình Ảnh Màu Sắc</label>
+    <div id="mauSacImageInputs">
+        <!-- Các input cho hình ảnh màu sắc sẽ được thêm vào đây bằng JavaScript -->
+    </div>
+</div>
+
+<button type="submit" class="btn btn-primary">Cập Nhật Sản Phẩm</button>
+
+
+<script>
+    document.getElementById('mauSacSelect').addEventListener('change', function () {
+        const selectedMauSacs = Array.from(this.selectedOptions).map(option => option.value);
+        const mauSacImageInputsDiv = document.getElementById('mauSacImageInputs');
+        mauSacImageInputsDiv.innerHTML = ''; // Xóa các input trước đó
+
+        selectedMauSacs.forEach(maMauSac => {
+            const div = document.createElement('div');
+            div.classList.add('mb-3');
+            div.innerHTML = `
+                <label class="form-label">Hình Ảnh Cho Màu ${maMauSac}</label>
+                <input type="file" name="HinhMauSac_${maMauSac}" class="form-control" />
+            `;
+            mauSacImageInputsDiv.appendChild(div);
+        });
+    });
+</script>

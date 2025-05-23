@@ -1,0 +1,116 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 class="dashboard-title">Welcome to Admin Dashboard</h1>
+<div class="row">
+    <div class="col-md-3">
+        <a href="@Url.Action("QuanLyDanhMuc", "Admin")">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Quản lý danh mục</h5>
+                    <p class="card-text">Xem và quản lý các danh mục sản phẩm.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-3">
+        <a href="@Url.Action("QuanLySanPham", "Admin")">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Quản lý sản phẩm</h5>
+                    <p class="card-text">Thêm, chỉnh sửa, và xóa sản phẩm.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-3">
+        <a href="@Url.Action("QuanLyMauSac", "Admin")">
+            <div class="card text-white bg-info mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Quản lý màu sắc</h5>
+                    <p class="card-text">Cập nhật các tùy chọn màu sắc.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-3">
+        <a href="@Url.Action("QuanLyKhachHang", "Admin")">
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Quản lý khách hàng</h5>
+                    <p class="card-text">Xem và quản lý thông tin khách hàng.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-3">
+        <a href="@Url.Action("QuanLyDonHang", "Admin")">
+            <div class="card text-white bg-danger mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Quản lý đơn hàng</h5>
+                    <p class="card-text">Xử lý và theo dõi đơn hàng.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="stats-container row mt-4">
+    <div class="col-md-3 stat-card">
+        <div class="stat-box bg-primary text-white">
+            <h3>@ViewBag.TotalCustomers</h3>
+            <p>Tổng số khách hàng</p>
+        </div>
+    </div>
+    <div class="col-md-3 stat-card">
+        <div class="stat-box bg-success text-white">
+            <h3>@ViewBag.TotalProducts</h3>
+            <p>Tổng số sản phẩm</p>
+        </div>
+    </div>
+    <div class="col-md-3 stat-card">
+        <div class="stat-box bg-danger text-white">
+            <h3>@ViewBag.TotalDonHang</h3>
+            <p>Tổng đơn hàng</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    a {
+        text-decoration: none;
+    }
+    .stats-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .stat-card {
+        padding: 10px;
+    }
+
+    .stat-box {
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+
+        .stat-box h3 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .stat-box p {
+            font-size: 1.1rem;
+            margin: 10px 0 0;
+        }
+
+        .stat-box:hover {
+            transform: scale(1.05);
+        }
+</style>

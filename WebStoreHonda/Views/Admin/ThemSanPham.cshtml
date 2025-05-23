@@ -1,0 +1,76 @@
+﻿@model WebStoreHonda.Models.SanPham
+
+@{
+    ViewBag.Title = "Thêm Sản Phẩm";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 class="dashboard-title">Thêm Sản Phẩm</h2>
+
+@using (Html.BeginForm("ThemSanPham", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="mb-3">
+        <label class="form-label">Tên Sản Phẩm</label>
+        @Html.TextBoxFor(m => m.TenSanPham, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.TenSanPham, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Mô Tả</label>
+        @Html.TextAreaFor(m => m.MoTa, new { @class = "form-control", rows = 5 })
+        @Html.ValidationMessageFor(m => m.MoTa, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Giá (đ)</label>
+        @Html.TextBoxFor(m => m.Gia, new { @class = "form-control", type = "number" })
+        @Html.ValidationMessageFor(m => m.Gia, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Hình Ảnh Đại Diện</label>
+        <input type="file" name="HinhDaiDien" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Chọn Danh Mục</label>
+        @Html.DropDownList("MaDanhMuc", (SelectList)ViewBag.DanhMucList, "Chọn danh mục", new { @class = "form-control" })
+        @Html.ValidationMessage("MaDanhMuc", "", new { @class = "text-danger" })
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Chọn Màu Sắc</label>
+        <select id="mauSacSelect" name="MaMauSac" class="form-control" multiple>
+            @foreach (var mauSac in ViewBag.MauSacList)
+            {
+                <option value="@mauSac.MaMauSac">@mauSac.TenMauSac</option>
+            }
+        </select>
+        @Html.ValidationMessage("MaMauSac", "", new { @class = "text-danger" })
+    </div>
+
+    <div id="mauSacImages" class="mb-3">
+        <label class="form-label">Hình Ảnh Màu Sắc</label>
+        <div id="mauSacImageInputs">
+            <!-- Các input cho hình ảnh màu sắc sẽ được thêm vào đây bằng JavaScript -->
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Thêm Sản Phẩm</button>
+}
+    <script>
+        document.getElementById('mauSacSelect').addEventListener('change', function () {
+            const selectedMauSacs = Array.from(this.selectedOptions).map(option => option.value);
+            const mauSacImageInputsDiv = document.getElementById('mauSacImageInputs');
+            mauSacImageInputsDiv.innerHTML = ''; // Xóa các input trước đó
+
+            selectedMauSacs.forEach(maMauSac => {
+                const div = document.createElement('div');
+                div.classList.add('mb-3');
+                div.innerHTML = `
+                    <label class="form-label">Hình Ảnh Cho Màu ${maMauSac}</label>
+                    <input type="file" name="HinhMauSac_${maMauSac}" class="form-control" />
+                `;
+                mauSacImageInputsDiv.appendChild(div);
+            });
+        });
+    </script>
